@@ -1,13 +1,13 @@
 import os
 
 print("一键生成vscode的C/C++配置文件\n")
-print("先决条件：\n\t1.安装vscode并安装C/C++扩展\n\t2.安装MinGW64\n\n")
+print("先决条件：\n\t1.安装vscode并安装C/C++扩展\n\t2.已有Dev-C++\n\n")
 
 workspacePath = input("请输入工作区路径，或者把工作区的文件夹拖进来：\n")
 #在路径中的反斜杠'\'改为正斜杠'/'
 workspacePath = workspacePath.replace('\\', '/')
 
-mingwPath = input("输入编译器MinGW64的路径，或者把MinGW64的文件夹拖进来(如D:\\MinGW64)：\n")
+mingwPath = input("输入编译器MinGW64的路径，或者把MinGW64的文件夹拖进来(如D:\\Dev-Cpp\\MinGW64)：\n")
 #在路径中的反斜杠'\'改为正斜杠'/'
 mingwPath = mingwPath.replace('\\', '/')
 
